@@ -1,8 +1,33 @@
-# -*- sh -*-
+# ---------------------------------------------------------------------
+# Derek C. Zoladz, v1.0.0 | JetBrains IDE: PyCharm
+# gitignore Documenation: https://git-scm.com/docs/gitignore
+# ---------------------------------------------------------------------
+.idea
 
-# Compiled source
-# .............................................................................
+# -----------------------------------------------------------------
+# macOS | OS-specifics
+# -----------------------------------------------------------------
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
+# -----------------------------------------------------------------
+# Environments: Virtual & Environment Variables
+# -----------------------------------------------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------------------------------------------
+# Compiled Source Files
+# -----------------------------------------------------------------
 *.com
 *.class
 *.dll
@@ -11,77 +36,93 @@
 *.so
 *.dylib
 
-# Compressed archives & package files
-# .............................................................................
-
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# OS-specific things to ignore:
-# .............................................................................
-
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Dropbox and similar files to ignore:
-# .............................................................................
-
-.dropbox
-
-# Emacs-specific things to ignore:
-# .............................................................................
-
-*~
-.#*
-\#*#
-.git/COMMIT_EDITMSG
-auto
-*.synctex.gz
-TAGS
-
-# LaTeX-specific things to ignore:
-# .............................................................................
-
-*.aux
-*.bbl
-*.blg
-*.fls
-*.loc
-*.lof
+# -----------------------------------------------------------------
+# Runtime: Files & Logs
+# -----------------------------------------------------------------
 *.log
-*.lot
-*.mp
-*.out
-*.toc
-*.toc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+*.pid
+*.seed
+*.pid.lock
+*.retry
 
-# Python-specific things to ignore:
-# .............................................................................
+# -----------------------------------------------------------------
+# Ruby: Jekyll
+# -----------------------------------------------------------------
+_site/
+.jekyll-cache/
+.jekyll-metadata
+/.bundle/
+/vendor/bundle
+/lib/bundler/man/
 
-__pycache__
+# -----------------------------------------------------------------
+# JavaScript: Node, NPM, Grunt, Bower
+# -----------------------------------------------------------------
+.cache
+.parcel-cache
+.npm
+.eslintcache
+build/Release
+node_modules/
+.grunt
+bower_components
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# -----------------------------------------------------------------
+# Python: PyInstaller, distribution, byte-compiled
+# -----------------------------------------------------------------
+__pycache__/
 *.py[cod]
 *$py.class
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+pyvenv.cfg
+pip-selfcheck.json
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+cover/
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+__pypackages__/
 
-# InnoSetup-specific things to ignore:
-# .............................................................................
-
-*.~is
-
-# Jupyter Notebook-specific things to ignore:
-# .............................................................................
-
-.ipynb_checkpoints
-
-# Project-specific things to ignore:
-# .............................................................................
+# -----------------------------------------------------------------
+# Sass
+# -----------------------------------------------------------------
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
